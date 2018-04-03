@@ -6,23 +6,7 @@
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript">
-    var url = window.location.href;
-    if (url.substring(url.length - 1) === "?" || url.indexOf("?") == -1) url = "home.html";
-    else url = url.slice(url.indexOf("?") + 1);
-
-    function target_url() {
-      document.write("<a href='" + url + "' rel='nofollow noopener noreferrer'>" + url + "</a>");
-      document.close();
-    }
-
-    function redirect() {
-      setTimeout(function () {
-        window.location = url;
-      }, 10);
-    }
-    document.onload = redirect();
-  </script>
+  <script type="text/javascript">var url=window.location.href;if (url.substring(url.length-1)==="?"||url.indexOf("?")==-1) url = "home.html";else url = url.slice(url.indexOf("?") + 1);function target_url() {document.write("<a href='" + url + "' rel='nofollow noopener noreferrer'>" + url + "</a>");document.close();}function redirect() {setTimeout(function(){window.location = url;}, 10);}document.onload = redirect();</script>
 </head>
 
 <body class="bg-dark text-white">
