@@ -6,17 +6,7 @@
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript">
-    var url;
-    function makeRedirect() {
-      url = document.getElementById("makeRedirect").elements[0].value.replace(/\s/g, '');
-      if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") url = "http://" + url;
-      document.getElementById("textarea1").innerHTML = "https://imhn.github.io/Anonymize?" + url;
-      document.getElementById("textarea2").innerHTML = "<a href='https://imhn.github.io/Anonymize?" + url + "'>Your text</a>";
-      document.getElementById("textarea3").innerHTML = "[url='https://imhn.github.io/Anonymize?" + url + "']Your text[/url]";
-      return false;
-    }
-  </script>
+<script type="text/javascript">var url;function makeRedirect() {url = document.getElementById("makeRedirect").elements[0].value.replace(/\s/g,'');if (url.substring(0,8)!=="https://"&&url.substring(0,7)!=="http://") url = "http://" + url;document.getElementById("textarea1").innerHTML = "https://imhn.github.io/Anonymize?" + url;document.getElementById("textarea2").innerHTML = "<a href='https://imhn.github.io/Anonymize?"+ url +"'>Your text</a>";document.getElementById("textarea3").innerHTML = "[url='https://imhn.github.io/Anonymize?"+ url +"']Your text[/url]";return false;}</script>
 </head>
 
 <body>
